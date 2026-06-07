@@ -17,26 +17,26 @@ cd
 go build -o password-generator
 ```
 
-## Usage
+# Usage
 
-# Run without flags (defaults: digits=true, symbols=true, hardness=medium)
+## Run without flags (defaults: digits=true, symbols=true, hardness=medium)
 ```bash
 ./password-generator
 ```
 
-# Custom hardness level
+## Custom hardness level
 ```bash
 ./password-generator -hardness=easy
 ./password-generator -hardness=hard
 ```
 
-# Disable digits or symbols
+## Disable digits or symbols
 ```bash
 ./password-generator -digits=false
 ./password-generator -symbols=false
 ```
 
-# Disable both digits and symbols
+## Disable both digits and symbols
 ```bash
 ./password-generator -digits=false -symbols=false
 ```
@@ -47,21 +47,21 @@ go build -o password-generator
 | medium   | 15              | 4                     |
 | hard     | 23              | 6                     |
 
-## Examples
-# Generate a medium password with digits and symbols (default)
+# Examples
+## Generate a medium password with digits and symbols (default)
 ```bash
 ./password-generator
 ```
-# Output: aB3cD5eFgH!jK7lM9nPqR@t
+## Output: aB3cD5eFgH!jK7lM9nPqR@t
 
-# Generate an easy password without symbols
+## Generate an easy password without symbols
 ```bash
 ./password-generator -hardness=easy -symbols=false
 ```
-# Output: Gt7nBq2
+## Output: Gt7nBq2
 
-# Generate a hard password with only letters
+## Generate a hard password with only letters
 ```bash
 ./password-generator -hardness=hard -digits=false -symbols=false
 ```
-# Output: KsLdQwErTyZuIoPaSdFgHj
+## Output: KsLdQwErTyZuIoPaSdFgHj
